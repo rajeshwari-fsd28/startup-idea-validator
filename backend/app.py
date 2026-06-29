@@ -15,11 +15,15 @@ client = OpenAI(
     api_key=os.getenv("OPENROUTER_API_KEY")
 )
 conn = pymysql.connect(
-       host="localhost",
-       user="root",
-       password="",
-       database="startup_validator",
-       cursorclass=pymysql.cursors.DictCursor
+    host=os.getenv("DB_HOST"),
+    port=int(os.getenv("DB_PORT")),
+    user=os.getenv("DB_USER"),
+    password=os.getenv("DB_PASSWORD"),
+    database=os.getenv("DB_NAME"),
+    ssl={
+        "ca": os.getenv("DB_SSL_CA")
+    },
+    cursorclass=pymysql.cursors.DictCursor
 )
 
 @app.route('/')
@@ -774,4 +778,4 @@ def recent_validations():
 
     return jsonify(ideas)
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
