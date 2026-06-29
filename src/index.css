@@ -1,0 +1,509 @@
+.hero-title {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.feature-card {
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 15px 25px rgba(0,0,0,0.1);
+}
+.navbar-custom{
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,.95) !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,.08);
+  z-index: 1000;
+}
+.hero-title{
+  animation: slideUp 1s ease;
+}
+
+@keyframes slideUp{
+  from{
+    opacity:0;
+    transform:translateY(40px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+.feature-card{
+  transition:.4s;
+  cursor:pointer;
+}
+
+.feature-card:hover{
+  transform:
+    translateY(-10px)
+    scale(1.03);
+
+  box-shadow:
+    0 20px 40px
+    rgba(79,70,229,.15);
+}
+.validation-card{
+background:#fff;
+border-radius:24px;
+padding:24px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+transition:.4s;
+border:none;
+}
+
+.validation-card:hover{
+transform:translateY(-10px);
+box-shadow:0 25px 50px rgba(0,0,0,.12);
+}
+
+.icon-box{
+width:72px;
+height:72px;
+border-radius:20px;
+background:#f3e8ff;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:32px;
+}
+
+.category-pill{
+background:#f3e8ff;
+color:#7c3aed;
+padding:10px 18px;
+border-radius:30px;
+font-weight:600;
+}
+
+.startup-title{
+font-weight:700;
+color:#0f172a;
+}
+
+.startup-desc{
+color:#64748b;
+font-size:18px;
+}
+
+.score-panel{
+background:#f8fafc;
+padding:20px;
+border-radius:18px;
+}
+
+.score-ring{
+width:80px;
+height:80px;
+border-radius:50%;
+background:linear-gradient(
+135deg,
+#7c3aed,
+#a855f7
+);
+
+color:white;
+font-size:28px;
+font-weight:700;
+
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.score-status{
+color:#7c3aed;
+font-weight:600;
+}
+
+.trend{
+font-size:36px;
+}
+
+.report-btn{
+width:100%;
+border:none;
+border-radius:14px;
+padding:14px;
+background:#0f172a;
+color:white;
+font-size:18px;
+font-weight:600;
+transition:.3s;
+}
+
+.report-btn:hover
+
+hr{
+opacity:.1;
+}
+/* analyze */
+.analyze-card{
+background:white;
+border-radius:28px;
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.custom-input{
+padding:14px;
+border-radius:14px;
+}
+
+.custom-input:focus{
+box-shadow:none;
+border-color:#7c3aed;
+}
+
+.tag-pill{
+background:#f3e8ff;
+color:#7c3aed;
+padding:10px 18px;
+border-radius:30px;
+font-weight:600;
+cursor:pointer;
+transition:.3s;
+}
+
+.tag-pill:hover{
+transform:translateY(-2px);
+}
+
+.analyze-btn{
+border:none;
+padding:16px;
+border-radius:14px;
+
+background:
+linear-gradient(
+135deg,
+#7c3aed,
+#4f46e5
+);
+
+color:white;
+font-size:18px;
+font-weight:600;
+
+transition:.3s;
+}
+
+.analyze-btn:hover{
+transform:translateY(-3px);
+}
+/* report */
+.report-card{
+background:white;
+padding:40px;
+border-radius:24px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.score-circle{
+width:180px;
+height:180px;
+border-radius:50%;
+
+background:
+linear-gradient(
+135deg,
+#7c3aed,
+#4f46e5
+);
+
+color:white;
+font-size:60px;
+font-weight:700;
+
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.metric-card{
+background:white;
+padding:25px;
+text-align:center;
+border-radius:20px;
+box-shadow:0 8px 20px rgba(0,0,0,.06);
+}
+
+.metric-card h2{
+color:#7c3aed;
+font-weight:700;
+}
+
+.swot-card{
+padding:25px;
+border-radius:20px;
+height:100%;
+}
+
+.strength{
+background:#dcfce7;
+}
+
+.weakness{
+background:#fef3c7;
+}
+
+.opportunity{
+background:#dbeafe;
+}
+
+.threat{
+background:#fee2e2;
+}
+
+.recommend-card{
+background:white;
+padding:20px;
+border-radius:16px;
+box-shadow:0 6px 15px rgba(0,0,0,.06);
+font-weight:600;
+}
+
+.report-btn{
+background:#7c3aed;
+color:white;
+border:none;
+padding:12px 24px;
+border-radius:12px;
+}
+
+.report-btn:hover{
+background:#6d28d9;
+color:white;
+}
+
+.report-btn-outline{
+border:2px solid #7c3aed;
+color:#7c3aed;
+padding:12px 24px;
+border-radius:12px;
+background:white;
+}
+
+.report-btn-outline:hover{
+background:#7c3aed;
+color:white;
+}
+/* dashboard */
+.dash-stat-card{
+background:white;
+border-radius:20px;
+padding:30px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.dash-stat-card h2{
+color:#7c3aed;
+font-weight:700;
+}
+
+.dashboard-card{
+background:white;
+border-radius:20px;
+padding:25px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.dashboard-card:hover{
+transform:translateY(-5px);
+}
+
+.mini-score{
+width:60px;
+height:60px;
+border-radius:50%;
+background:#7c3aed;
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:700;
+font-size:20px;
+}
+
+.dashboard-btn{
+background:#7c3aed;
+color:white;
+border:none;
+}
+
+.dashboard-btn:hover{
+background:#6d28d9;
+color:white;
+}
+
+.dashboard-btn-outline{
+border:2px solid #7c3aed;
+color:#7c3aed;
+}
+
+.dashboard-btn-outline:hover{
+background:#7c3aed;
+color:white;
+}
+/* footer */
+.footer-simple{
+  background: rgba(15, 23, 42, 0.08);
+
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  border-top: 1px solid rgba(124,58,237,0.15);
+
+  color: #0f172a;
+
+  font-size: 14px;
+}
+/* nav links */
+.nav-link{
+  position:relative;
+  font-weight:500;
+  transition:0.3s;
+}
+
+.active-nav{
+  color:#7c3aed !important;
+  font-weight:700;
+}
+
+.active-nav::after{
+  content:"";
+
+  position:absolute;
+
+  left:0;
+  bottom:-4px;
+
+  width:100%;
+  height:3px;
+
+  background:#7c3aed;
+
+  border-radius:10px;
+}
+.footer-simple {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+    background: #ffffff;   /* or your footer color */
+    border-top: 1px solid #ddd;
+}
+/* ===========================
+   Competitor Cards
+=========================== */
+
+.competitor-card{
+    background:#fff;
+    border-radius:20px;
+    padding:28px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transition:.3s;
+    border:1px solid #eee;
+}
+
+.competitor-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 40px rgba(124,58,237,.18);
+}
+
+.rank-badge{
+    background:#7c3aed;
+    color:white;
+    padding:6px 12px;
+    border-radius:50px;
+    font-size:13px;
+    font-weight:700;
+}
+
+.competitor-card h4{
+    color:#7c3aed;
+}
+
+.competitor-card p{
+    line-height:1.7;
+}
+
+/* ===========================
+Competitive Advantage
+=========================== */
+
+.advantage-card{
+
+    background:white;
+    border-radius:20px;
+    padding:35px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    margin-bottom:50px;
+
+}
+
+.advantage-item{
+
+    background:#f8f9ff;
+
+    padding:18px;
+
+    border-radius:15px;
+
+    transition:.3s;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.advantage-item:hover{
+
+    background:#ede9fe;
+
+    transform:translateX(8px);
+
+}
+
+.tick{
+
+    width:32px;
+
+    height:32px;
+
+    background:#7c3aed;
+
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:bold;
+
+}
