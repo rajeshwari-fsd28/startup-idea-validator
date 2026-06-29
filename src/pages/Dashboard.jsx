@@ -11,7 +11,7 @@ function Dashboard() {
 
   useEffect(() => {
 
-    fetch("http://localhost:5000/dashboard")
+    fetch("https://startup-idea-validator-r6si.onrender.com/dashboard")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

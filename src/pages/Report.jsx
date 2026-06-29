@@ -13,8 +13,8 @@ function Report() {
 useEffect(() => {
 
   const url = id
-    ? `http://localhost:5000/report/${id}`
-    : "http://localhost:5000/latestreport";
+  ? `https://startup-idea-validator-r6si.onrender.com/report/${id}`
+  : "https://startup-idea-validator-r6si.onrender.com/latestreport";
 
   fetch(url)
     .then(async (res) => {

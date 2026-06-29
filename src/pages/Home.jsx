@@ -7,7 +7,7 @@ const navigate = useNavigate();
 const [recentIdeas, setRecentIdeas] = useState([]);
 useEffect(() => {
 
-  fetch("http://localhost:5000/recent-validations")
+  fetch("https://startup-idea-validator-r6si.onrender.com/recent-validations")
     .then((res) => res.json())
     .then((data) => {
       setRecentIdeas(data);
