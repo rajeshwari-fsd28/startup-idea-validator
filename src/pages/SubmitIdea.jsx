@@ -23,7 +23,7 @@ function SubmitIdea() {
     try {
 
      const response = await fetch(
-  "http://127.0.0.1:5000/analyzeidea",
+  "https://startup-idea-validator-r6si.onrender.com/analyzeidea",
   {
     method: "POST",
     headers: {
